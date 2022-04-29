@@ -1,0 +1,363 @@
+.container{
+    background-color: #F4F5F6;
+    height: fit-content;
+    min-height: 100vh;
+    max-width: 100vw;
+    overflow-x: hidden;
+}
+
+.banner{
+    position: relative;
+    height: 340px;
+    width: 100%;
+    background-color: #4bb0a9;
+    clip-path: ellipse(80% 100% at 50% 0%);
+}
+
+.circle1,
+.circle2{
+    position: absolute;
+    border-radius: 50%;
+    background-color: #55BDB6;
+}
+
+.circle1{
+    width: 250px;
+    height: 250px;
+    margin-top: -5rem;
+    margin-left: -8rem;
+
+}
+
+.circle2{
+    width: 350px;
+    height: 350px;
+    margin-top: -1rem;
+    margin-left: 16rem;
+}
+
+.header{
+    position: absolute;
+    width: 230px;
+    height: fit-content;
+    left: 0;
+    right: 0;
+    margin: auto;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo{
+    width: 100%;
+    height: auto;
+}
+
+.appTitleContainer{
+    width: 90%;
+    background-color: white;
+    border-radius: 1rem;
+    padding-top: .8rem;
+    padding-bottom: .8rem;
+    margin-top: -2rem;
+    z-index: 2;
+    box-shadow: 8px 8px 25px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+}
+
+.appTitle{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 1.6rem;
+    text-align: center;
+    margin: 0;
+    line-height: 1.2;
+}
+
+.dataContainer{
+    margin-top: 3rem;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.stats,
+.fachasContainer,
+.diaContainer{
+    width: 80%;
+    max-width: 370px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    border-radius: 1.5rem;
+    box-shadow: 4px 2px 30px rgba(0,0,0,0.30), 0 5px 12px rgba(0,0,0,0.22);
+}
+
+.statsTitle,
+.fachasTitle,
+.diaTitle{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 2.3rem;
+    margin: 0;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.statsData{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+}
+
+.bags,
+.kg{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 40%;
+}
+
+.circleBags,
+.circleKg{
+    width: 110px;
+    height: 110px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.counter{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 1.9rem;
+}
+
+.statsLabel{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.fachas{
+    width: 80%;
+}
+
+.facha{
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.fachaName,
+.fachaKg,
+.newFacha,
+.newDia{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 1.7rem;
+}
+
+.fachaName{
+    margin: 0;
+    max-width: 70%;
+    overflow: hidden;
+}
+
+.fachaKg{
+    margin: 0;
+}
+
+.diaTitle{
+    margin-bottom: .5rem;
+}
+
+.date{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 1.4rem;
+    margin: 0;
+}
+
+.newFacha,
+.newDia,
+.editBtn,
+.newFachaBtn{
+    width: 80%;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    border: none;
+    background-color: #4bb0a9;
+    border-radius: .6rem;
+    color: white;
+    cursor: pointer;
+}
+
+.diaContainer{
+    margin-bottom: 3rem;
+}
+
+.modalContainer{
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    border-radius: 1.5rem;
+    box-shadow: 4px 2px 30px rgba(0,0,0,0.30), 0 5px 12px rgba(0,0,0,0.22);
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.fachaInfo,
+.circleName{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.circleName{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color:#4bb0a9;
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 2rem;
+    margin: 0;
+    color:white
+}
+
+.fachaTitleContainer{
+    width: fit-content;
+    min-width: 5rem;
+    background-color: white;
+    border-radius: 1rem;
+    padding-top: .8rem;
+    padding-bottom: .8rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-top: -2rem;
+    z-index: 2;
+    box-shadow: 8px 8px 25px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+}
+
+.fachaTitle{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 1.3rem;
+    text-align: center;
+    margin: 0;
+    line-height: 1.2;
+}
+
+.fachaTotal{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 1.6rem;
+    margin: 0;
+    margin-top: 1.5rem;
+}
+
+.editBtn{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 1.3rem;
+    margin: 0;
+    margin-top: 1rem;
+}
+
+.buttonContainer{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.closeModal{
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: 1.5rem;
+    color: #FF7070;
+    cursor: pointer;
+}
+
+.newFachaData{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    width: 80%;
+}
+
+.newFachaTitle{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 2.2rem;
+    margin: 0;
+    white-space: nowrap;
+}
+
+.newFachaInput{
+    width: calc(100% - .5rem);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    margin: 0;
+    border-radius: .5rem;
+    padding-left: .5rem;
+    min-height: 1.8rem;
+    border: none;
+    outline: none;
+    background-color: #e6e6e6;
+}
+
+.newFachaBtn{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 1.3rem;
+    margin: 0;
+    margin-top: 1rem;
+    width: 100%;
+}
+
+.newFachaBtnError{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 1.3rem;
+    margin: 0;
+    margin-top: 1rem;
+    width: 100%;
+    border: none;
+    background-color: #d1d1d1;
+    border-radius: .6rem;
+    color: white;
+    cursor: pointer;
+}
+
+@media (min-width: 700px) {
+    .circle1,
+    .circle2{
+        display: none;
+    }
+
+    .banner{
+        background: rgb(75,176,169);
+        background: radial-gradient(circle, rgba(75,176,169,1) 0%, rgba(0,147,136,1) 100%);
+    }
+}

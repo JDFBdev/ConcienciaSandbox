@@ -1,0 +1,43 @@
+.container{
+    width: 100vw;
+    height: 100vh;
+    background: rgb(75,176,169);
+    background: radial-gradient(circle, rgba(75,176,169,1) 0%, rgb(0, 128, 119) 100%);
+    overflow: hidden;
+    position: absolute;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo{
+    width: 200px;
+    height: auto;
+}
+
+.MyClassEnterActive {
+    opacity: 0;
+    transform: translate(0px, 10px);
+    transition: transform .5s, opacity .5s ease;
+}
+  
+.MyClassEnterDone {
+    opacity: 1;
+    transform: translate(0px, -10px);
+    transition: transform .5s, opacity .5s ease;
+}
+  
+.exit{
+    opacity: 1;
+    transform: translate(0px, 10px);
+    transition: transform .5s, opacity .5s ease;
+}
+
+.done{
+    opacity: 0;
+    transform: translate(0px, -30px);
+    transition: transform .5s, opacity .5s ease;
+}
+
