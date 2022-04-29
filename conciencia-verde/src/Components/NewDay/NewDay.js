@@ -71,7 +71,7 @@ export default function NewDay(){
     const handleSubmit = function(e){
         e.preventDefault();
 
-        toast.success(`Día registrado correctamente.`)
+        toast.success(`Day Successfully Registered.`)
 
         Navigate("/")
     }
@@ -84,7 +84,7 @@ export default function NewDay(){
                 <div className={s.circle2}/>
                 <div className={s.header}>
                     <div className={s.appTitleContainer}>
-                        <h3 className={s.appTitle}>Nuevo Día</h3>
+                        <h3 className={s.appTitle}>New Day</h3>
                     </div>
                 </div>
             </div>
@@ -93,7 +93,7 @@ export default function NewDay(){
 
                 <Transition>
                     <div className={s.fachasContainer}>
-                        <h3 className={s.fachasTitle}>Miembros</h3>
+                        <h3 className={s.fachasTitle}>Members</h3>
                         <div className={s.fachas}>
                             {
                                 fachas.all?.map((f,i) => {
@@ -108,7 +108,7 @@ export default function NewDay(){
                                 })
                             }
                             <div className={s.line} />
-                            <h3 className={s.fachasTitle}>Miembros Hoy</h3>
+                            <h3 className={s.fachasTitle}>Today</h3>
                             {
                                 fachas.hoy?.map((f,i) => {
                                     return (
@@ -127,14 +127,14 @@ export default function NewDay(){
 
                 <Transition timeout={100}>
                     <div className={s.bolsasContainer}>
-                        <h3 className={s.bolsasTitle}>Bolsas</h3>
+                        <h3 className={s.bolsasTitle}>Bags</h3>
                         <div className={s.bolsas}>
                             {
                                 bolsas?.map((f,i) => {
                                     return (
                                         <Transition key={f}>
                                             <div className={s.bolsa} onClick={()=>{ setSelected({id: i+1 , kg: f}); open();}}  >
-                                                <p className={s.bolsaName}>Bolsa {i+1}</p>
+                                                <p className={s.bolsaName}>Bag {i+1}</p>
                                                 <p className={s.bolsaName}>{f} Kg</p>
                                             </div>
                                         </Transition>
@@ -144,10 +144,10 @@ export default function NewDay(){
                             <div className={s.bolsaForm}>
                                 <form className={s.form} onSubmit={handleBolsaSubmit}>
                                     <div className={s.newBolsaDiv}>
-                                        <p className={s.bolsaName}>Bolsa {bolsas?.length+1}</p>
+                                        <p className={s.bolsaName}>Bag {bolsas?.length+1}</p>
                                         <input className={s.bolsaInput} onChange={handleBolsa} value={newBolsa} type='number'/>
                                     </div>
-                                    <button className={s.bolsaBtn}>Agregar</button>
+                                    <button className={s.bolsaBtn}>Add</button>
                                 </form>
                             </div>
                         </div>
@@ -156,15 +156,15 @@ export default function NewDay(){
 
                 <Transition timeout={200}>
                     <div className={s.resumenContainer}>
-                        <h3 className={s.resumenTitle}>Resumen</h3>
+                        <h3 className={s.resumenTitle}>Summary</h3>
                         <p className={s.data}>{handleDate()}</p>
-                        <p className={s.data}>{fachas.hoy.length} Miembros</p>
-                        <p className={s.data}>{bolsas?.length} Bolsas</p>
+                        <p className={s.data}>{fachas.hoy.length} Members</p>
+                        <p className={s.data}>{bolsas?.length} Bags</p>
                         <p className={s.data}>Total: {handleKg()} Kg</p>
                         {
                             (fachas.hoy.length && bolsas.length) ? 
-                            <button className={s.confirmBtn} onClick={handleSubmit}>Confirmar</button> : 
-                            <button className={s.confirmBtnError} >Confirmar</button>
+                            <button className={s.confirmBtn} onClick={handleSubmit}>Confirm</button> : 
+                            <button className={s.confirmBtnError} >Confirm</button>
                         }
                     </div>
                 </Transition>
@@ -174,9 +174,9 @@ export default function NewDay(){
             <Modal>
                 <Transition>
                     <div className={s.modalContainer}>
-                        <h3 className={s.deleteBolsaTitle}>Bolsa {selected.id}</h3>
+                        <h3 className={s.deleteBolsaTitle}>Bag {selected.id}</h3>
                         <p className={s.data}>{selected.kg} Kg</p>
-                        <button className={s.deleteBolsaBtn} onClick={deleteBolsa} >Eliminar</button>
+                        <button className={s.deleteBolsaBtn} onClick={deleteBolsa} >Delete</button>
                     </div>
                 </Transition>
             </Modal>
