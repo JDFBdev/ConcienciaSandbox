@@ -27,7 +27,7 @@ export default function Home({show}){
 
     const handleSubmit = function(e){
         e.preventDefault();
-        toast.success(`${newFacha} agregadx correctamente.`)
+        toast.success(`${newFacha} Successfully Added.`)
         setFachas(prev=>([...prev, {username: newFacha, kg: 0}]))
 
         closeNew();
