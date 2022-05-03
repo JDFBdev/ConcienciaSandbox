@@ -55,7 +55,7 @@ export default function Home({show}){
 
                     <Transition timeout={show ? 3100 : 0}>
                         <div className={s.stats}>
-                            <h3 className={s.statsTitle}>Statsistics</h3>
+                            <h3 className={s.statsTitle}>Statistics</h3>
                             <div className={s.statsData}>
                                 <div className={s.bags}>
                                     <div className={s.circleBags} style={{backgroundImage: `url(${circle})`}}>
