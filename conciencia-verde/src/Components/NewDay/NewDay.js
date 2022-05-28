@@ -41,7 +41,7 @@ export default function NewDay(){
     const handleBolsaSubmit = function(e){
         e.preventDefault();
         if (newBolsa){
-            setBolsas(prev=>([...prev, Number(newBolsa)]))
+            setBolsas(prev=>([...prev, Math.round(Number(newBolsa))]))
             setNewBolsa('');
         }
     }
