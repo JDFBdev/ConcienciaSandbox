@@ -61,13 +61,13 @@ export default function Home({show}){
                                     <div className={s.circleBags} style={{backgroundImage: `url(${circle})`}}>
                                         <CountUp duration={3} useEasing={true} className={s.counter} start={0} end={stats?.bolsasTotales} delay={show ? 3 : 0} />
                                     </div>
-                                    <p className={s.statsLabel}>Bags of trash disposed</p>
+                                    <p className={s.statsLabel}>Bags of trash<br/>disposed</p>
                                 </div>
                                 <div className={s.kg}>
                                     <div className={s.circleBags} style={{backgroundImage: `url(${circle})`}}>
                                         <CountUp duration={3} useEasing={true} className={s.counter} start={0} end={stats?.kgTotales} delay={show ? 3 : 0} />
                                     </div>
-                                    <p className={s.statsLabel}>Kg of trash taken out of the sea</p>
+                                    <p className={s.statsLabel}>Kg of trash taken<br/>out of the sea</p>
                                 </div>
                             </div>
                         </div>
